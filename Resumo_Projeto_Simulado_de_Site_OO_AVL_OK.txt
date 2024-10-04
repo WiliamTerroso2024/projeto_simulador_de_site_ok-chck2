@@ -1,0 +1,28 @@
+O código implementa um navegador web simples que utiliza uma árvore AVL para gerenciar URLs. Abaixo está um resumo das principais funcionalidades e componentes do código:
+
+AVLNode e AVLTree:
+
+AVLNode: Classe que representa um nó na árvore AVL, contendo uma chave (URL), ponteiros para filhos esquerdo e direito, e uma altura.
+AVLTree: Classe que implementa a árvore AVL. Possui métodos para:
+Inserir URLs, garantindo que a árvore permaneça balanceada.
+Calcular a altura de um nó.
+Calcular o fator de balanceamento.
+Realizar rotações à direita e à esquerda para manter o balanceamento da árvore.
+Realizar buscas de URLs na árvore.
+Fazer uma travessia em ordem (in-order) para listar as URLs em ordem alfabética.
+Browser:
+
+Classe que simula um navegador, contendo métodos para:
+load_urls: Carrega URLs de um arquivo, valida o formato das URLs e as adiciona à árvore AVL.
+is_valid_url: Verifica se uma URL é válida usando expressões regulares.
+add_url: Adiciona uma nova URL à árvore se não existir.
+show_history: Exibe o histórico de páginas visitadas.
+navigate: Navega para uma URL fornecida, atualizando o histórico de navegação.
+back: Retorna à última página visitada.
+show_sitemap: Mostra todas as URLs armazenadas na árvore em ordem.
+help_command: Exibe uma lista de comandos disponíveis.
+run: Inicia o navegador, carrega URLs do arquivo "urls.txt" e aceita comandos do usuário em um loop.
+Execução:
+
+O programa é iniciado pela execução da classe Browser, que carrega as URLs de um arquivo e interage com o usuário, permitindo navegar, adicionar URLs, mostrar o histórico de navegação e visualizar o sitemap.
+Em resumo, o código oferece uma estrutura para um navegador básico, utilizando uma árvore AVL para organizar e gerenciar URLs de forma eficiente, permitindo ao usuário interagir com elas através de comandos simples.
