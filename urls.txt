@@ -4,3 +4,5 @@ www.band.com
 www.ifpb.com
 http://example.com
 www.ifpb.edu.br
+http://www.ifpb.edu.br/tsi
+http://example.com/cst
